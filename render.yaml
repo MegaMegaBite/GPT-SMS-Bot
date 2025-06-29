@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gpt-sms-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: OPENAI_API_KEY
+        value: your-openai-api-key-here
